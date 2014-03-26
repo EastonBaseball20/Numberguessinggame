@@ -11,14 +11,30 @@ namespace ConsoleApplication1
         {
             String input;
 
-            int guess = 50;
-            Console.WriteLine("Is Your Guess {0}? h, l, e," guess);
-            input= Console.ReadLine();
+            int h = 100, l = 0, e, guess;
+            while(true)
+            {
 
+            guess = (h + l) / 2;
+            Console.WriteLine("Is your guess higher, lower, or equal to {0}?", guess);
+            input= Console.ReadLine();
             if (input == "h")
+            {
+                l = guess + l;
+            }
+            else if (input == "l")
+            {
+                h = guess + l;
+
+
+            }
+            else if (input == "e")
+            {
+                break;
+            }
         }
-        Console.WriteLine("is your number 75
     }
+  }      
 }
 
 
