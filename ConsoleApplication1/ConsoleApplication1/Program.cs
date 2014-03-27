@@ -11,7 +11,7 @@ namespace ConsoleApplication1
         {
             String input;
 
-            int h = 100, l = 0, e, guess;
+            int h = 100, l = 0, guess;
             while(true)
             {
 
@@ -20,11 +20,13 @@ namespace ConsoleApplication1
             input= Console.ReadLine();
             if (input == "h")
             {
+    
                 l = guess + l;
             }
             else if (input == "l")
             {
-                h = guess + l;
+               
+                h = guess - l;
 
 
             }
